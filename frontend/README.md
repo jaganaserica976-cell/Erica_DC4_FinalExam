@@ -1,11 +1,20 @@
 # Student Grades Frontend
 
-The frontend uses Laravel Blade templates.
+A React + Vite interface for the Student Grades Management System.
 
-## Location
+## Run locally
 
-- Blade templates: ../backend/resources/views/
-- CSS, JavaScript, and public assets: ../backend/public/
-- Routes: ../backend/routes/web.php
+From this directory:
 
-The frontend is rendered by the Laravel backend.
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite. To create a production build, run `npm run build`.
+
+## Demo roles and data
+
+Use the **Demo role** selector to preview the Admin, Teacher, and Student screens. The Teacher preview is limited to sample Mathematics and Physics classes; the Student preview shows one sample student's records. These are front-end demonstrations only, not authenticated or secure role controls.
+
+The interface uses sample data stored in React state. Adding a grade updates the current page only; it does not persist after a refresh or connect to the Laravel database. The Laravel application currently renders its own Blade pages and does not expose a JSON API.
